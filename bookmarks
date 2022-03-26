@@ -1,0 +1,85 @@
+;;;; Emacs Bookmark Format Version 1;;;; -*- coding: utf-8-emacs; mode: lisp-data -*-
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("emacs/Emacs China"
+  (handler . eaf--bookmark-restore)
+  (eaf-app . "browser")
+  (filename . "https://emacs-china.org"))
+ ("entertainment/哔哩哔哩 (゜-゜)つロ 干杯~-bilibili"
+  (handler . eaf--bookmark-restore)
+  (eaf-app . "browser")
+  (filename . "https://www.bilibili.com/"))
+ ("code/github.com"
+  (handler . eaf--bookmark-restore)
+  (eaf-app . "browser")
+  (filename . "http://github.com/"))
+ ("emacs/Emacs Lisp Basics"
+  (handler . eaf--bookmark-restore)
+  (eaf-app . "browser")
+  (filename . "http://xahlee.info/emacs/emacs/elisp_basics.html"))
+ ("code/百度网盘"
+  (handler . eaf--bookmark-restore)
+  (eaf-app . "browser")
+  (filename . "https://pan.baidu.com/disk/main#/index?category=all"))
+ ("music/【夜航星】全站首个真▪电音版！_哔哩哔哩_bilibili"
+  (handler . eaf--bookmark-restore)
+  (eaf-app . "browser")
+  (filename . "https://www.bilibili.com/video/BV12L411K7c3"))
+ ("code/中国电子学会考评中心"
+  (handler . eaf--bookmark-restore)
+  (eaf-app . "browser")
+  (filename . "https://qceit.org.cn/bos/default.html"))
+ ("emacs/Emacs Lisp"
+  (handler . eaf--bookmark-restore)
+  (eaf-app . "browser")
+  (filename . "https://www.gnu.org/software/emacs/manual/html_node/elisp/"))
+ ("code/Pygame Front Page — pygame v2.1.1 documentation"
+  (handler . eaf--bookmark-restore)
+  (eaf-app . "browser")
+  (filename . "https://www.pygame.org/docs/"))
+ ("code/v2rayA"
+  (handler . eaf--bookmark-restore)
+  (eaf-app . "browser")
+  (filename . "http://127.0.0.1:2017/"))
+ ("code/LintCode 炼码"
+  (handler . eaf--bookmark-restore)
+  (eaf-app . "browser")
+  (filename . "https://www.lintcode.com/"))
+ ("python/qt/PyQt5中文教程"
+  (handler . eaf--bookmark-restore)
+  (eaf-app . "browser")
+  (filename . "http://code.py40.com/pyqt5/"))
+ ("archlinux/Arch Linux 中文论坛"
+  (handler . eaf--bookmark-restore)
+  (eaf-app . "browser")
+  (filename . "https://bbs.archlinuxcn.org/"))
+ ("music/牛掰的人是这样拉小提琴的！"
+  (handler . eaf--bookmark-restore)
+  (eaf-app . "browser")
+  (filename . "https://music.163.com/#/playlist?id=111456043"))
+ ("music/程序员的救赎"
+  (handler . eaf--bookmark-restore)
+  (eaf-app . "browser")
+  (filename . "https://music.163.com/#/playlist?id=985755779"))
+ ("music/贝多芬•肖邦•巴赫•莫扎特 - 歌单 - 网易云音乐"
+  (handler . eaf--bookmark-restore)
+  (eaf-app . "browser")
+  (filename . "https://music.163.com/#/playlist?id=41220530"))
+ ("music/【周深】《我们的歌》19首纯享版合集完整版_哔哩哔哩_bilibili"
+  (handler . eaf--bookmark-restore)
+  (eaf-app . "browser")
+  (filename . "https://www.bilibili.com/video/BV1Ai4y1t7SY"))
+ ("music/网易云音乐"
+  (handler . eaf--bookmark-restore)
+  (eaf-app . "browser")
+  (filename . "https://music.163.com/"))
+ ("code/在线翻译_有道"
+  (handler . eaf--bookmark-restore)
+  (eaf-app . "browser")
+  (filename . "https://fanyi.youdao.com/"))
+ ("emacs/Home · emacs-eaf/emacs-application-framework Wiki"
+  (handler . eaf--bookmark-restore)
+  (eaf-app . "browser")
+  (filename . "https://github.com/emacs-eaf/emacs-application-framework/wiki"))
+ )
