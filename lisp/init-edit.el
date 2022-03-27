@@ -399,6 +399,22 @@
   :diminish
   :hook (after-init . fancy-narrow-mode))
 
+;; Auto save the buffer
+(use-package super-save
+  :hook (after-init . super-save-mode)
+  :custom
+  (super-save-auto-save-when-idle t)
+  (auto-save-default nil)
+  :config
+  (super-save-mode 1))
+
+(use-package auto-save
+  :demand t
+  :load-path "/home/was/.emacs.d/site-packages/auto-save"
+  :config
+  (auto-save-enable)
+  (setq auto-save-silent t))
+
 (provide 'init-edit)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
