@@ -56,7 +56,7 @@
       (("}" dashboard-next-section "next")
        ("{" dashboard-previous-section "previous")
        ("r" dashboard-goto-recent-files "recent files")
-       ("m" dashboard-goto-bookmarks "bookmarks")
+       ;; ("m" dashboard-goto-bookmarks "bookmarks")
        ("p" dashboard-goto-projects "projects"))
       "Item"
       (("RET" widget-button-press "open" :exit t)
@@ -87,14 +87,14 @@
           dashboard-center-content t
           dashboard-show-shortcuts nil
           dashboard-items '((recents  . 10)
-                            (bookmarks . 5)
+                            ;; (bookmarks . 5)
                             (projects . 5))
 
           dashboard-set-init-info t
           dashboard-set-file-icons liven-icon
           dashboard-set-heading-icons liven-icon
           dashboard-heading-icons '((recents   . "file-text")
-                                    (bookmarks . "bookmark")
+                                    ;; (bookmarks . "bookmark")
                                     (agenda    . "calendar")
                                     (projects  . "briefcase")
                                     (registers . "database"))

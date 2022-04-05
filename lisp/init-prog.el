@@ -42,6 +42,11 @@
   (setq-default prettify-symbols-alist liven-prettify-symbols-alist)
   (setq prettify-symbols-unprettify-at-point 'right-edge))
 
+(when (boundp 'display-fill-column-indicator)
+  (setq-default indicate-buffer-boundaries 'left)
+  ;; (setq-default display-fill-column-indicator-character ?\u254e)
+  (add-hook 'prog-mode-hook 'display-fill-column-indicator-mode))
+
 ;; Tree-sitter
 ;; Only support with dynamic module
 (when (functionp 'module-load)

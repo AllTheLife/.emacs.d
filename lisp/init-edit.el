@@ -297,8 +297,8 @@
               hungry-delete-except-modes
               '(help-mode minibuffer-mode minibuffer-inactive-mode calc-mode)))
 
-;; Rime
-(require 'init-rime)
+;; ;; Rime
+;; (require 'init-rime)
 
 ;; Framework for mode-specific buffer indexes
 (use-package imenu
@@ -394,6 +394,26 @@
 (unless sys/win32p
   (use-package sudo-edit))
 
+;; Copilot
+(use-package copilot
+  :demand t
+  :load-path "/home/was/.emacs.d/site-packages/copilot.el"
+  :bind
+  (("M-o" . copilot-accept-completion)
+   ("M-t" . copilot-complete))
+  :config
+  (add-hook 'post-command-hook (lambda ()
+                                 (copilot-clear-overlay)
+                                 (when (meow-insert-mode-p)
+                                   (copilot-complete)))))
+
+;; Emacs surround
+(use-package emacs-surround
+  :demand t
+  :load-path "~/.emacs.d/site-packages/emacs-surround"
+  :bind
+  ("C-q" . emacs-surround))
+
 ;; Narrow/Widen
 (use-package fancy-narrow
   :diminish
@@ -408,12 +428,12 @@
   :config
   (super-save-mode 1))
 
-(use-package auto-save
-  :demand t
-  :load-path "/home/was/.emacs.d/site-packages/auto-save"
-  :config
-  (auto-save-enable)
-  (setq auto-save-silent t))
+;; (use-package auto-save
+;;   :demand t
+;;   :load-path "/home/was/.emacs.d/site-packages/auto-save"
+;;   :config
+;;   (auto-save-enable)
+;;   (setq auto-save-silent t))
 
 (provide 'init-edit)
 

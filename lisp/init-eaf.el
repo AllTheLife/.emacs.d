@@ -36,12 +36,13 @@
 ;; (require 'eaf-pdf-viewer)
 ;; (require 'eaf-markdown-previewer)
 ;; (require 'eaf-org-previewer)
-(require 'eaf-image-viewer)
+;; (require 'eaf-image-viewer)
 ;; (require 'eaf-system-monitor)
 ;; (require 'eaf-music-player)
 (use-package eaf
   :load-path "~/.emacs.d/site-packages/emacs-application-framework"
   :custom
+  (eaf-enable-debug t)
   (eaf-browser-continue-where-left-off t)
   (eaf-browser-enable-adblocker t)
   (browse-url-browser-function 'eaf-open-browser)

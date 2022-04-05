@@ -10,6 +10,18 @@
   (handler . eaf--bookmark-restore)
   (eaf-app . "browser")
   (filename . "https://www.bilibili.com/"))
+ ("code/英雄哪里出来的博客_CSDN博客"
+  (handler . eaf--bookmark-restore)
+  (eaf-app . "browser")
+  (filename . "https://blog.csdn.net/WhereIsHeroFrom"))
+ ("code/力扣（LeetCode）官网 - 全球极客挚爱的技术成长平台"
+  (handler . eaf--bookmark-restore)
+  (eaf-app . "browser")
+  (filename . "https://leetcode-cn.com/"))
+ ("code/百度网盘"
+  (handler . eaf--bookmark-restore)
+  (eaf-app . "browser")
+  (filename . "https://pan.baidu.com/disk/main#/index?category=all"))
  ("code/github.com"
   (handler . eaf--bookmark-restore)
   (eaf-app . "browser")
@@ -18,10 +30,6 @@
   (handler . eaf--bookmark-restore)
   (eaf-app . "browser")
   (filename . "http://xahlee.info/emacs/emacs/elisp_basics.html"))
- ("code/百度网盘"
-  (handler . eaf--bookmark-restore)
-  (eaf-app . "browser")
-  (filename . "https://pan.baidu.com/disk/main#/index?category=all"))
  ("music/【夜航星】全站首个真▪电音版！_哔哩哔哩_bilibili"
   (handler . eaf--bookmark-restore)
   (eaf-app . "browser")

@@ -209,7 +209,7 @@ nil means disabled."
                  (const :tag "Disable" nil)))
 
 (defcustom liven-lsp-format-on-save-ignore-modes
-  '(python-mode c++-mode c-mode)
+  '()
   "The modes that don't auto format and organize imports while saving the buffers.
 `prog-mode' means ignoring all derived modes.
 "

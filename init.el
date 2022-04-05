@@ -94,7 +94,7 @@ Otherwise the startup will be very slow. "
 (require 'init-ivy)
 (require 'init-company)
 (require 'init-yasnippet)
-(require 'init-eaf)
+;; (require 'init-eaf) ;; The emacs-application-framework can not be used in my configuration.
 (require 'init-restart)
 
 (require 'init-bookmark)

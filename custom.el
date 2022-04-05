@@ -4,23 +4,23 @@
 ;;;       Put your own configurations in custom-post.el to override default configurations.
 ;;; Code:
 
-;; (setq centaur-logo nil)                        ; Logo file or nil (official logo)
-;; (setq centaur-full-name "user name")           ; User full name
-;; (setq centaur-mail-address "user@email.com")   ; Email address
-;; (setq centaur-proxy "127.0.0.1:7890")          ; HTTP/HTTPS proxy
-;; (setq centaur-socks-proxy "127.0.0.1:7890")    ; SOCKS proxy
+;; (setq liven-logo nil)                        ; Logo file or nil (official logo)
+(setq liven-full-name "AllTheLife")           ; User full name
+(setq liven-mail-address "xjn208930@gmail.com")   ; Email address
+;; (setq liven-proxy "127.0.0.1:7890")          ; HTTP/HTTPS proxy
+;; (setq liven-socks-proxy "127.0.0.1:7890")    ; SOCKS proxy
 (setq liven-server nil)                      ; Enable `server-mode' or not: t or nil
-;; (setq centaur-icon nil)                        ; Display icons or not: t or nil
+;; (setq liven-icon nil)                        ; Display icons or not: t or nil
 (setq liven-package-archives 'ustc)         ; Package repo: melpa, emacs-china, netease, ustc, tencent or tuna
 (setq liven-theme 'default)                     ; Color theme: auto, random, system, default, pro, dark, light, warm, cold, day or night
 (setq liven-completion-style 'minibuffer)    ; Completion display style: minibuffer or childframe
-;; (setq centaur-dashboard nil)                   ; Use dashboard at startup or not: t or nil
-;; (setq centaur-restore-frame-geometry nil)      ; Restore the frame's geometry at startup: t or nil
+;; (setq liven-dashboard nil)                   ; Use dashboard at startup or not: t or nil
+;; (setq liven-restore-frame-geometry nil)      ; Restore the frame's geometry at startup: t or nil
 (setq liven-lsp 'eglot)                     ; Set LSP client: lsp-mode, eglot or nil
-;; (setq centaur-lsp-format-on-save-ignore-modes '(c-mode c++-mode)) ; Ignore format on save for some languages
-;; (setq centaur-chinese-calendar t)              ; Use Chinese calendar or not: t or nil
-;; (setq centaur-prettify-symbols-alist nil)      ; Alist of symbol prettifications. Nil to use font supports ligatures.
-;; (setq centaur-prettify-org-symbols-alist nil)  ; Alist of symbol prettifications for `org-mode'
+;; (setq liven-lsp-format-on-save-ignore-modes '(c-mode c++-mode)) ; Ignore format on save for some languages
+;; (setq liven-chinese-calendar t)              ; Use Chinese calendar or not: t or nil
+;; (setq liven-prettify-symbols-alist nil)      ; Alist of symbol prettifications. Nil to use font supports ligatures.
+;; (setq liven-prettify-org-symbols-alist nil)  ; Alist of symbol prettifications for `org-mode'
 
 ;; For Emacs devel
 ;; (setq package-user-dir (locate-user-emacs-file (format "elpa-%s" emacs-major-version)))
