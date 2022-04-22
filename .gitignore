@@ -22,3 +22,4 @@
 /var/
 /.cache/
 /forge-database.sqlite
+/eln-cache/

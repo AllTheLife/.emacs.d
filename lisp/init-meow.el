@@ -1,4 +1,4 @@
-;; init-meow.el --- Edit by MEOW.	-*- lexical-binding: t -*-
+
 
 ;; Copyright (C) 2022 AllTheLife
 
@@ -118,11 +118,11 @@
      '("<escape>" . ignore)))
   (meow-setup)
   (setq meow-replace-state-name-list
-        '((normal . "🅝")
-          (beacon . "🅑")
-          (insert . "🅘")
-          (motion . "🅜")
-          (keypad . "🅚")))
+        '((normal . "NOR")
+          (beacon . "BEA")
+          (insert . "INS")
+          (motion . "MOT")
+          (keypad . "KEY")))
   (meow-global-mode 1))
 
 (provide 'init-meow)

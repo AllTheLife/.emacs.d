@@ -400,12 +400,7 @@
   :load-path "/home/was/.emacs.d/site-packages/copilot.el"
   :bind
   (("M-o" . copilot-accept-completion)
-   ("M-t" . copilot-complete))
-  :config
-  (add-hook 'post-command-hook (lambda ()
-                                 (copilot-clear-overlay)
-                                 (when (meow-insert-mode-p)
-                                   (copilot-complete)))))
+   ("M-t" . copilot-complete)))
 
 ;; Emacs surround
 (use-package emacs-surround

@@ -32,28 +32,27 @@
 
 (add-to-list 'load-path "~/.emacs.d/site-packages/emacs-application-framework")
 (require 'eaf)
-(require 'eaf-browser)
-;; (require 'eaf-pdf-viewer)
-;; (require 'eaf-markdown-previewer)
-;; (require 'eaf-org-previewer)
-;; (require 'eaf-image-viewer)
-;; (require 'eaf-system-monitor)
-;; (require 'eaf-music-player)
-(use-package eaf
-  :load-path "~/.emacs.d/site-packages/emacs-application-framework"
-  :custom
-  (eaf-enable-debug t)
-  (eaf-browser-continue-where-left-off t)
-  (eaf-browser-enable-adblocker t)
-  (browse-url-browser-function 'eaf-open-browser)
-  (eaf-browser-translate-language "zh-CN")
-  :config
-  (defalias 'browse-web #'eaf-open-browser)
-  :bind
-  (("C-c mo" . eaf-open)
-   ("C-c mb" . eaf-open-browser)
-   ("C-c ms" . eaf-search-it)
-   ("C-c b"  . eaf-open-bookmark)))
+(require 'eaf-git)
+(require 'eaf-system-monitor)
+(require 'eaf-video-player)
+(require 'eaf-image-viewer)
+(require 'eaf-music-player)
+(require 'eaf-jupyter)
+;; (use-package eaf
+;; :load-path "~/.emacs.d/site-packages/emacs-application-framework"
+;; :custom
+;; (eaf-enable-debug t)
+;; (eaf-browser-continue-where-left-off t)
+;; (eaf-browser-enable-adblocker t)
+;; (browse-url-browser-function 'eaf-open-browser)
+;; (eaf-browser-translate-language "zh-CN")
+;; :config
+;; (defalias 'browse-web #'eaf-open-browser)
+;; :bind
+;; (("C-c mo" . eaf-open)
+;;  ("C-c mb" . eaf-open-browser)
+;;  ("C-c ms" . eaf-search-it)
+;;  ("C-c b"  . eaf-open-bookmark)))
 
 (provide 'init-eaf)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

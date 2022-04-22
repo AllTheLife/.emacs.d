@@ -226,6 +226,13 @@
            pdf-annot-list-mode
            flycheck-error-list-mode) . hide-mode-line-mode)))
 
+(use-package good-scroll
+  :load-path "~/.emacs.d/site-packages/good-scroll.el"
+  :hook (after-init . good-scroll-mode)
+  :bind
+  (("C-S-v" . good-scroll-up)
+   ("M-V" . good-scroll-down)))
+
 (use-package cnfonts
   :after (doom-modeline)
   :init (cnfonts-mode 1))
