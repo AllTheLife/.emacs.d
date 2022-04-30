@@ -227,8 +227,6 @@
            flycheck-error-list-mode) . hide-mode-line-mode)))
 
 (use-package good-scroll
-  :load-path "~/.emacs.d/site-packages/good-scroll.el"
-  :hook (after-init . good-scroll-mode)
   :bind
   (("C-S-v" . good-scroll-up)
    ("M-V" . good-scroll-down)))
@@ -241,6 +239,11 @@
 (when emacs/>=25.2p
   (use-package minions
     :hook (doom-modeline-mode . minions-mode)))
+
+;; Valign
+(use-package valign
+  :config
+  (add-hook 'org-mode-hook #'valign-mode))
 
 ;; Icons
 ;; NOTE: Must run `M-x all-the-icons-install-fonts', and install fonts manually on Windows
