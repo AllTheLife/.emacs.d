@@ -1,0 +1,63 @@
+[submodule "lazy-load"]
+path = site-lisp/extensions/lazy-load
+url = https://github.com/manateelazycat/lazy-load.git
+
+[submodule "hydra"]
+path = site-lisp/extensions/hydra
+url = https://github.com/abo-abo/hydra.git
+
+[submodule "diminish"]
+path = site-lisp/extensions/diminish
+url = https://github.com/myrjola/diminish.el.git
+
+[submodule "compat"]
+path = site-lisp/extensions/compat
+url = https://github.com/emacs-compat/compat.git
+
+[submodule "dash"]
+path = site-lisp/extensions/dash
+url = https://github.com/magnars/dash.el.git
+
+[submodule "frame-local"]
+path = site-lisp/extensions/frame-local
+url = https://github.com/sebastiencs/frame-local.git
+
+[submodule "s"]
+path = site-lisp/extensions/s
+url = https://github.com/magnars/s.el.git
+
+[submodule "with-editor"]
+path = site-lisp/extensions/with-editor
+url = https://github.com/magit/with-editor.git
+
+[submodule "ht"]
+path = site-lisp/extensions/ht
+url = https://github.com/Wilfred/ht.el.git
+
+[submodule "all-the-icons"]
+path = site-lisp/extensions/all-the-icons
+url = https://github.com/domtronn/all-the-icons.el.git
+
+[submodule "all-the-icons-completion"]
+path = site-lisp/extensions/all-the-icons-completion
+url = https://github.com/iyefrat/all-the-icons-completion.git
+
+[submodule "avy"]
+path = site-lisp/extensions/avy
+url = https://github.com/abo-abo/avy.git
+
+[submodule "undo-fu"]
+path = site-lisp/extensions/undo-fu
+url = https://github.com/emacsmirror/undo-fu.git
+
+[submodule "undo-fu-session"]
+path = site-lisp/extensions/undo-fu-session
+url = https://codeberg.org/ideasman42/emacs-undo-fu-session.git
+
+[submodule "vundo"]
+path = site-lisp/extensions/vundo
+url = https://github.com/casouri/vundo.git
+
+[submodule "meow"]
+path = site-lisp/extensions/meow
+url = https://github.com/meow-edit/meow.git
