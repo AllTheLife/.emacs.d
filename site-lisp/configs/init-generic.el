@@ -1,3 +1,7 @@
+ ;; 不要自动启用 package
+(setq package-enable-at-startup nil
+      package--init-file-ensured t)
+
 ;; 增加长行处理性能
 (setq-default bidi-display-reordering nil)
 (setq bidi-inhibit-bpa t
@@ -38,15 +42,19 @@
 (global-subword-mode 1)                          ;; Word 移动支持 FooBar 的格式
 (delete-selection-mode 1)                        ;; 选择后再次输入视为替换
 (global-display-line-numbers-mode 1)             ;; 显示行号
+(setq display-line-numbers-type 'relative)       ;; 启用相对行号
 (global-hl-line-mode 1)                          ;; 高亮当前行
 (auto-compression-mode 1)                        ;; 打开压缩文件时自动解压缩
-(prettify-symbols-mode)                          ;; 将字符显示为奇特的符号
+(global-prettify-symbols-mode 1)                 ;; 将字符显示为奇特的符号
 (save-place-mode)                                ;; 保存光标在每个文件的位置
 (savehist-mode 1)                                ;; 保存命令历史
 (tool-bar-mode -1)                               ;; 关闭工具栏
 (menu-bar-mode -1)                               ;; 关闭菜单栏
 (scroll-bar-mode -1)                             ;; 关闭滚动条
-(electric-pair-mode 1)                           ;; 自动补全括号
+(recentf-mode 1)                                 ;; 保存最近打开的文件
+(setq line-move-visual nil)                      ;; 方便操作
+(setq track-eol t)                               ;; 保证光标在行尾
+(setq frame-inhibit-implied-resize t)            ;; 不要缩放 frame
 (setq global-mark-ring-max 1024)                 ;; 设置最大的全局标记容量
 (setq use-dialog-box nil)                        ;; 从不弹出对话框
 (setq history-delete-duplicates t)               ;; 删除 minibuffer 的重复历史
@@ -69,6 +77,8 @@
 (setq auto-save-default nil)                     ;; 取消自动保存
 (setq make-backup-files nil)                     ;; 不生成备份文件
 (setq scroll-margin 5)                           ;; 始终在屏幕上方和下方保留 5 行
+(setq gdb-many-windows t)                        ;; 启用多窗口调试
+(setq gc-cons-threshold 10000000)                ;; 将垃圾回收设置为10M
 (setq-default comment-style 'indent)             ;; 设定自动缩进的注释风格
 (setq byte-compile-warnings
       (quote (
@@ -87,19 +97,23 @@
               )))
 
 ;; 在行号旁显示文件指示符
-(add-hook 'prog-mode-hook
-	  (lambda () (setq indicate-buffer-boundaries 'left)))
+(add-hook! prog-mode-hook
+  (setq indicate-buffer-boundaries 'left))
 
 ;; 高亮显示行尾空格
 (setq-default show-trailing-whitespace nil)
-(dolist (hook '(prog-mode-hook text-mode-hook markdown-mode-hook org-mode-hook))
-  (add-hook hook (lambda ()
-		   (setq-local show-trailing-whitespace t))))
+(add-hook! (prog-mode-hook text-mode-hook markdown-mode-hook org-mode-hook)
+  (setq-local show-trailing-whitespace t))
 
 ;; 自动刷新文件
 (global-auto-revert-mode)
 (setq global-auto-revert-non-file-buffers t
       auto-revert-verbose nil)
+
+;; 关闭 modeline
+(setq-default mode-line-format nil)
+(set-face-attribute 'mode-line nil :height 1
+		    :background (face-background 'default))
 
 
 (provide 'init-generic)

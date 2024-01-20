@@ -1,63 +1,159 @@
 [submodule "lazy-load"]
-path = site-lisp/extensions/lazy-load
-url = https://github.com/manateelazycat/lazy-load.git
-
-[submodule "hydra"]
-path = site-lisp/extensions/hydra
-url = https://github.com/abo-abo/hydra.git
-
-[submodule "diminish"]
-path = site-lisp/extensions/diminish
-url = https://github.com/myrjola/diminish.el.git
-
+	path = site-lisp/extensions/lazy-load
+	url = https://github.com/manateelazycat/lazy-load.git
+[submodule "diminish.el"]
+	path = site-lisp/extensions/diminish
+	url = https://github.com/myrjola/diminish.el.git
 [submodule "compat"]
-path = site-lisp/extensions/compat
-url = https://github.com/emacs-compat/compat.git
-
-[submodule "dash"]
-path = site-lisp/extensions/dash
-url = https://github.com/magnars/dash.el.git
-
+	path = site-lisp/extensions/compat
+	url = https://github.com/emacs-compat/compat.git
+[submodule "dash.el"]
+	path = site-lisp/extensions/dash
+	url = https://github.com/magnars/dash.el.git
 [submodule "frame-local"]
-path = site-lisp/extensions/frame-local
-url = https://github.com/sebastiencs/frame-local.git
-
-[submodule "s"]
-path = site-lisp/extensions/s
-url = https://github.com/magnars/s.el.git
-
+	path = site-lisp/extensions/frame-local
+	url = https://github.com/sebastiencs/frame-local.git
+[submodule "s.el"]
+	path = site-lisp/extensions/s
+	url = https://github.com/magnars/s.el.git
 [submodule "with-editor"]
-path = site-lisp/extensions/with-editor
-url = https://github.com/magit/with-editor.git
-
-[submodule "ht"]
-path = site-lisp/extensions/ht
-url = https://github.com/Wilfred/ht.el.git
-
-[submodule "all-the-icons"]
-path = site-lisp/extensions/all-the-icons
-url = https://github.com/domtronn/all-the-icons.el.git
-
-[submodule "all-the-icons-completion"]
-path = site-lisp/extensions/all-the-icons-completion
-url = https://github.com/iyefrat/all-the-icons-completion.git
-
-[submodule "avy"]
-path = site-lisp/extensions/avy
-url = https://github.com/abo-abo/avy.git
-
-[submodule "undo-fu"]
-path = site-lisp/extensions/undo-fu
-url = https://github.com/emacsmirror/undo-fu.git
-
-[submodule "undo-fu-session"]
-path = site-lisp/extensions/undo-fu-session
-url = https://codeberg.org/ideasman42/emacs-undo-fu-session.git
-
-[submodule "vundo"]
-path = site-lisp/extensions/vundo
-url = https://github.com/casouri/vundo.git
-
+	path = site-lisp/extensions/with-editor
+	url = https://github.com/magit/with-editor.git
+[submodule "ht.el"]
+	path = site-lisp/extensions/ht
+	url = https://github.com/Wilfred/ht.el.git
+[submodule "kaolin-themes"]
+	path = site-lisp/extensions/kaolin-themes
+	url = https://github.com/ogdenwebb/emacs-kaolin-themes
+[submodule "rand-theme"]
+	path = site-lisp/extensions/rand-theme
+	url = https://github.com/gopar/rand-theme
+[submodule "autothemer"]
+	path = site-lisp/extensions/autothemer
+	url = https://github.com/jasonm23/autothemer
+[submodule "magit"]
+	path = site-lisp/extensions/magit
+	url = https://github.com/magit/magit.git
 [submodule "meow"]
-path = site-lisp/extensions/meow
-url = https://github.com/meow-edit/meow.git
+	path = site-lisp/extensions/meow
+	url = https://github.com/meow-edit/meow
+[submodule "expand-region.el"]
+	path = site-lisp/extensions/expand-region
+	url = https://github.com/magnars/expand-region.el
+[submodule "avy"]
+	path = site-lisp/extensions/avy
+	url = https://github.com/abo-abo/avy
+[submodule "markdown-mode"]
+	path = site-lisp/extensions/markdown-mode
+	url = https://github.com/jrblevin/markdown-mode
+[submodule "yasnippet"]
+	path = site-lisp/extensions/yasnippet
+	url = https://github.com/joaotavora/yasnippet
+[submodule "lsp-bridge"]
+	path = site-lisp/extensions/lsp-bridge
+	url = https://github.com/manateelazycat/lsp-bridge
+[submodule "vertico"]
+	path = site-lisp/extensions/vertico
+	url = https://github.com/minad/vertico
+[submodule "marginalia"]
+	path = site-lisp/extensions/marginalia
+	url = https://github.com/minad/marginalia
+[submodule "orderless"]
+	path = site-lisp/extensions/orderless
+	url = https://github.com/oantolin/orderless
+[submodule "consult"]
+	path = site-lisp/extensions/consult
+	url = https://github.com/minad/consult
+[submodule "yasnippet-snippets"]
+	path = site-lisp/extensions/yasnippet-snippets
+	url = https://github.com/AndreaCrotti/yasnippet-snippets
+[submodule "auto-save"]
+	path = site-lisp/extensions/auto-save
+	url = https://github.com/manateelazycat/auto-save
+[submodule "emacs-rime"]
+	path = site-lisp/extensions/emacs-rime
+	url = https://github.com/DogLooksGood/emacs-rime
+[submodule "posframe"]
+	path = site-lisp/extensions/posframe
+	url = https://github.com/tumashu/posframe
+[submodule "emacs-emojify"]
+	path = site-lisp/extensions/emacs-emojify
+	url = https://github.com/iqbalansari/emacs-emojify
+[submodule "jieba"]
+	path = site-lisp/extensions/jieba
+	url = https://github.com/cireu/jieba.el
+[submodule "holo-layer"]
+	path = site-lisp/extensions/holo-layer
+	url = https://github.com/manateelazycat/holo-layer
+[submodule "svg-lib"]
+	path = site-lisp/extensions/svg-lib
+	url = https://github.com/rougier/svg-lib
+[submodule "svg-tag-mode"]
+	path = site-lisp/extensions/svg-tag-mode
+	url = https://github.com/rougier/svg-tag-mode
+[submodule "vertico-posframe"]
+	path = site-lisp/extensions/vertico-posframe
+	url = https://github.com/tumashu/vertico-posframe
+[submodule "goggles"]
+	path = site-lisp/extensions/goggles
+	url = https://github.com/minad/goggles
+[submodule "dirvish"]
+	path = site-lisp/extensions/dirvish
+	url = https://github.com/alexluigit/dirvish
+[submodule "combobulate"]
+	path = site-lisp/extensions/combobulate
+	url = https://github.com/mickeynp/combobulate
+[submodule "fingertip"]
+	path = site-lisp/extensions/fingertip
+	url = https://github.com/manateelazycat/fingertip
+[submodule "ts-fold"]
+	path = site-lisp/extensions/ts-fold
+	url = https://github.com/emacs-tree-sitter/ts-fold
+[submodule "ace-window"]
+	path = site-lisp/extensions/ace-window
+	url = https://github.com/abo-abo/ace-window
+[submodule "dape"]
+	path = site-lisp/extensions/dape
+	url = https://github.com/svaante/dape
+[submodule "indent-bars"]
+	path = site-lisp/extensions/indent-bars
+	url = https://github.com/jdtsmith/indent-bars
+[submodule "breadcrumb"]
+	path = site-lisp/extensions/breadcrumb
+	url = https://github.com/joaotavora/breadcrumb
+[submodule "nerd-icons"]
+	path = site-lisp/extensions/nerd-icons
+	url = https://github.com/rainstormstudio/nerd-icons.el
+[submodule "nerd-icons-dired"]
+	path = site-lisp/extensions/nerd-icons-dired
+	url = https://github.com/rainstormstudio/nerd-icons-dired
+[submodule "nerd-icons-completion"]
+	path = site-lisp/extensions/nerd-icons-completion
+	url = https://github.com/rainstormstudio/nerd-icons-completion
+[submodule "rainbow-identifiers"]
+	path = site-lisp/extensions/rainbow-identifiers
+	url = https://github.com/Fanael/rainbow-identifiers
+[submodule "rainbow-delimiters"]
+	path = site-lisp/extensions/rainbow-delimiters
+	url = https://github.com/Fanael/rainbow-delimiters
+[submodule "embark"]
+	path = site-lisp/extensions/embark
+	url = https://github.com/oantolin/embark
+[submodule "maple-run"]
+	path = site-lisp/extensions/maple-run
+	url = https://github.com/honmaple/emacs-maple-run
+[submodule "vundo"]
+	path = site-lisp/extensions/vundo
+	url = https://github.com/casouri/vundo
+[submodule "undo-fu"]
+	path = site-lisp/extensions/undo-fu
+	url = https://github.com/emacsmirror/undo-fu
+[submodule "undo-fu-session"]
+	path = site-lisp/extensions/undo-fu-session
+	url = https://github.com/emacsmirror/undo-fu-session
+[submodule "visual-fill-column"]
+	path = site-lisp/extensions/visual-fill-column
+	url = https://github.com/joostkremers/visual-fill-column
+[submodule "telega"]
+	path = site-lisp/extensions/telega
+	url = https://github.com/zevlg/telega.el
