@@ -64,7 +64,7 @@
         ("SPC" . fingertip-space)                ;智能 space
         ("RET" . fingertip-newline)              ;智能 newline
         ;; 删除
-        ("M-o" . fingertip-backward-delete) ;向后删除
+        ("DEL" . fingertip-backward-delete) ;向后删除
         ("C-d" . fingertip-forward-delete)  ;向前删除
         ("C-k" . fingertip-kill)            ;向前kill
         ;; 包围
@@ -105,7 +105,7 @@
  '(("d" . dirvish)
    ("s" . dirvish-side))
  "init-dired"
- "C-c r")
+ "C-c i")
 
 (with-eval-after-load 'dirvish
   (lazy-load-local-keys
@@ -132,8 +132,69 @@
 
 ;;; embark: 选中后操作
 (lazy-load-global-keys
- '(("C-c e" . embark-act))
+ '(("C-c C-e" . embark-act))
  "embark")
+
+
+;;; avy: 快速跳转
+(lazy-load-global-keys
+ '(("c" . avy-goto-char-timer)
+   ("l" . avy-goto-line))
+ "init-avy"
+ "C-c a")
+
+;;; avy-thing-edit: 快速跳转并执行操作
+(lazy-load-global-keys
+ '(("s" . avy-thing-copy-sexp)
+   ("S" . avy-thing-cut-sexp)
+   ("e" . avy-thing-copy-email)
+   ("E" . avy-thing-cut-email)
+   ("f" . avy-thing-copy-filename)
+   ("F" . avy-thing-cut-filename)
+   ("u" . avy-thing-copy-url)
+   ("U" . avy-thing-cut-url)
+   ("w" . avy-thing-copy-word)
+   ("W" . avy-thing-cut-word)
+   ("m" . avy-thing-copy-symbol)
+   ("M" . avy-thing-cut-symbol)
+   ("d" . avy-thing-copy-defun)
+   ("D" . avy-thing-cut-defun)
+   ("," . avy-thing-copy-sentence)
+   ("." . avy-thing-cut-sentence)
+   ("h" . avy-thing-copy-whitespace)
+   ("H" . avy-thing-cut-whitespace)
+   ("l" . avy-thing-copy-line)
+   ("L" . avy-thing-cut-line)
+   ("r" . avy-thing-copy-region-or-line)
+   ("R" . avy-thing-cut-region-or-line)
+   ("k" . avy-thing-copy-to-line-end)
+   ("K" . avy-thing-cut-to-line-end)
+   ("b" . avy-thing-copy-to-line-beginning)
+   ("B" . avy-thing-cut-to-line-beginning)
+   ("c" . avy-thing-copy-comment)
+   ("C" . avy-thing-cut-comment)
+   ("'" . avy-thing-copy-parentheses)
+   ("\"" . avy-thing-cut-parentheses))
+ "init-avy"
+ "C-c c")
+(lazy-load-global-keys
+ '(("s" . avy-thing-replace-sexp)
+   ("e" . avy-thing-replace-email)
+   ("f" . avy-thing-replace-filename)
+   ("u" . avy-thing-replace-url)
+   ("w" . avy-thing-replace-word)
+   ("m" . avy-thing-replace-symbol)
+   ("d" . avy-thing-replace-defun)
+   ("," . avy-thing-replace-sentence)
+   ("h" . avy-thing-replace-whitespace)
+   ("l" . avy-thing-replace-line)
+   ("r" . avy-thing-replace-region-or-line)
+   ("k" . avy-thing-replace-to-line-end)
+   ("b" . avy-thing-replace-to-line-beginning)
+   ("c" . avy-thing-replace-comment)
+   ("'" . avy-thing-replace-parentheses))
+ "init-avy"
+ "C-c r")
 
 
 (provide 'init-key)

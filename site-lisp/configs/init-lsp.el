@@ -16,6 +16,8 @@
 (setq lsp-bridge-peek-ace-keys '(?a ?r ?s ?t ?n ?e ?i ?o))
 (setq lsp-bridge-diagnostic-fetch-idle 0.1)
 (setq markdown-enable-highlighting-syntax t)
+(dolist (i '(1 2 3 4 5 6 7 8 9 0))
+  (add-to-list 'lsp-bridge-completion-hide-characters (number-to-string i)))
 (setq-default markdown-fontify-code-blocks-natively t)
 
 (global-lsp-bridge-mode)

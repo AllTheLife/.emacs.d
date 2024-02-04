@@ -157,3 +157,18 @@
 [submodule "telega"]
 	path = site-lisp/extensions/telega
 	url = https://github.com/zevlg/telega.el
+[submodule "transient"]
+	path = site-lisp/extensions/transient
+	url = https://github.com/magit/transient
+[submodule "beacon"]
+	path = site-lisp/extensions/beacon
+	url = https://github.com/Malabarba/beacon
+[submodule "thing-edit"]
+	path = site-lisp/extensions/thing-edit
+	url = https://github.com/manateelazycat/thing-edit
+[submodule "avy-thing-edit"]
+	path = site-lisp/extensions/avy-thing-edit
+	url = https://github.com/AllTheLife/avy-thing-edit
+[submodule "mini-frame"]
+	path = site-lisp/extensions/mini-frame
+	url = https://github.com/muffinmad/emacs-mini-frame

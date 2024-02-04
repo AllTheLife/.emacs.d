@@ -1,6 +1,6 @@
 (require 'rime)
 (require 'posframe)
-(autoload 'jieba-mode "jieba.el" "Load Jieba.el.")
+(autoload 'jieba-mode "jieba.el" "Load Jieba.el." t)
 
 
 (setq rime-user-data-dir "~/.local/share/fcitx5/rime"
@@ -11,6 +11,8 @@
             :font "WenQuanYi Micro Hei Mono"
             :internal-border-width 10)
       default-input-method "rime")
+
+(add-hook 'text-mode 'jieba-mode)
 
 
 (provide 'init-rime)

@@ -1,3 +1,4 @@
+(require 'transient)
 (autoload 'magit "magit" "Load magit." t)
 
 

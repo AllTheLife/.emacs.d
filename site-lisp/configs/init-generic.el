@@ -79,21 +79,22 @@
 (setq scroll-margin 5)                           ;; 始终在屏幕上方和下方保留 5 行
 (setq gdb-many-windows t)                        ;; 启用多窗口调试
 (setq gc-cons-threshold 10000000)                ;; 将垃圾回收设置为10M
+(setq package-install-upgrade-built-in t)        ;; 允许更新内置包
 (setq-default comment-style 'indent)             ;; 设定自动缩进的注释风格
 (setq byte-compile-warnings
       (quote (
               ;; 显示的警告
-              free-vars                 ;; 不在当前范围的引用变量
-              unresolved                ;; 不知道的函数
-              callargs                  ;; 函数调用的参数和定义的不匹配
-              obsolete                  ;; 荒废的变量和函数
-              noruntime                 ;; 函数没有定义在运行时期
-              interactive-only          ;; 正常不被调用的命令
-              make-local ;; 调用 `make-variable-buffer-local' 可能会不正确的
-              mapcar     ;; `mapcar' 调用
+              free-vars	       ;; 不在当前范围的引用变量
+              unresolved       ;; 不知道的函数
+              callargs         ;; 函数调用的参数和定义的不匹配
+              obsolete         ;; 荒废的变量和函数
+              noruntime	       ;; 函数没有定义在运行时期
+              interactive-only ;; 正常不被调用的命令
+              make-local       ;; 调用 `make-variable-buffer-local' 可能会不正确的
+              mapcar           ;; `mapcar' 调用
               ;; 抑制的警告
-              (not redefine)        ;; 重新定义的函数 (比如参数数量改变)
-              (not cl-functions)    ;; `CL' 包中的运行时调用的函数
+              (not redefine)     ;; 重新定义的函数 (比如参数数量改变)
+              (not cl-functions) ;; `CL' 包中的运行时调用的函数
               )))
 
 ;; 在行号旁显示文件指示符
