@@ -196,4 +196,18 @@
  "C-c r")
 
 
+;;; blink-search: 快速模糊搜索
+(lazy-load-global-keys
+ '(("C-c b" . blink-search))
+ "init-blink-search")
+
+
+;;; color-rg: 重构利器
+(lazy-load-global-keys
+ '(("p" . color-rg-search-input-in-project)
+   ("f" . color-rg-search-input-in-current-file))
+ "color-rg"
+ "C-c C-r")
+
+
 (provide 'init-key)

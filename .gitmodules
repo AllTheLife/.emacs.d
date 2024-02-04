@@ -175,3 +175,9 @@
 [submodule "vterm"]
 	path = site-lisp/extensions/vterm
 	url = https://github.com/akermu/emacs-libvterm
+[submodule "color-rg"]
+	path = site-lisp/extensions/color-rg
+	url = https://github.com/manateelazycat/color-rg
+[submodule "blink-search"]
+	path = site-lisp/extensions/blink-search
+	url = https://github.com/manateelazycat/blink-search
