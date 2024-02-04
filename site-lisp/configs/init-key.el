@@ -125,9 +125,8 @@
 
 ;;; maple-run: 编译并运行
 (lazy-load-global-keys
- '(("r" . compile-and-run))
- "init-compile-and-run"
- "C-c r")
+ '(("C-c X" . compile-and-run))
+ "init-compile-and-run")
 
 
 ;;; embark: 选中后操作

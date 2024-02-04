@@ -12,3 +12,4 @@ places
 /tree-sitter/
 /undo-fu-session/
 /.emacs.desktop
+/debug-adapters/
