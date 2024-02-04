@@ -172,3 +172,6 @@
 [submodule "mini-frame"]
 	path = site-lisp/extensions/mini-frame
 	url = https://github.com/muffinmad/emacs-mini-frame
+[submodule "vterm"]
+	path = site-lisp/extensions/vterm
+	url = https://github.com/akermu/emacs-libvterm
