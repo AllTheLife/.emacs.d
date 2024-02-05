@@ -210,4 +210,50 @@
  "C-c C-r")
 
 
+;;; dape: 利用 dap 协议进行调试
+(lazy-load-global-keys
+ '(("d" . dape)
+   ("b" . dape-breakpoint-toggle))
+ "dape"
+ "C-x C-a")
+
+
+;;; ace-window: 对窗口进行快速操作
+(lazy-load-unset-keys '("C-x 1" "C-x 0" "C-x 2" "C-x 3"))
+(lazy-load-global-keys
+ '(;; Actions
+   ("o" . ace-window)
+   ("z" . toggle-delete-other-windows)
+   ("x" . delete-window)
+   ("s" . ace-swap-window)
+   ;; Resize
+   ("H" . shrink-window-horizontally)
+   ("N" . enlarge-window)
+   ("E" . shrink-window)
+   ("I" . enlarge-window-horizontally)
+   ("b" . balance-windows)
+   ;; Split
+   ("h" . split-window-right)
+   ("n" . split-window-below)
+   ("e" . my-split-window-below)
+   ("i" . my-split-window-right)
+   ("t" . my-split-window-horizontally)
+   ("r" . my-split-window-vertically)
+   ;; Undo / Redo
+   ("u" . winner-undo)
+   ("U" . winner-redo))
+ "init-windows"
+ "C-c w")
+
+
+;;; popper: 管理弹出的窗口
+(lazy-load-local-keys
+ '(("c" . popper-cycle)
+   ("y" . popper-toggle-type)
+   ("t" . popper-toggle))
+ popper-mode-map
+ "popper"
+ "C-c C-p")
+
+
 (provide 'init-key)

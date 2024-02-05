@@ -181,3 +181,12 @@
 [submodule "blink-search"]
 	path = site-lisp/extensions/blink-search
 	url = https://github.com/manateelazycat/blink-search
+[submodule "rainbow-mode"]
+	path = site-lisp/extensions/rainbow-mode
+	url = https://github.com/emacsmirror/rainbow-mode
+[submodule "diff-hl"]
+	path = site-lisp/extensions/diff-hl
+	url = https://github.com/dgutov/diff-hl
+[submodule "popper"]
+	path = site-lisp/extensions/popper
+	url = https://github.com/karthink/popper

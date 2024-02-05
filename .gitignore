@@ -14,3 +14,5 @@ places
 /.emacs.desktop
 /debug-adapters/
 /blink-search.db
+/games/
+/blink-search/

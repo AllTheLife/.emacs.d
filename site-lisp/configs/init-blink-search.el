@@ -3,10 +3,10 @@
 
 (setq blink-search-common-directory
       '(("HOME" "~/")
-	("CONFIG" "~/.emacs.d/site-lisp/config")
+	("CONFIGS" "~/.emacs.d/site-lisp/configs")
 	("CONFIGROOT" "~/.emacs.d/")
 	("REPO" "~/.emacs.d/site-lisp/extensions/")
-	("WORK" "~/C/")))
+	("WORK" "~/C/Luogu/")))
 
 ;; (setq blink-search-enable-posframe)
 

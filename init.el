@@ -30,7 +30,7 @@
     (require 'init-minibuffer)
     (require 'init-auto-save)
     (require 'init-treesit)
-    (require 'init-indent-bars)
+    ;; (require 'init-indent-bars)
     (require 'init-compile-and-run)
     (require 'init-undo)
     (require 'init-key)
