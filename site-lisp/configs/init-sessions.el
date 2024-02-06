@@ -1,8 +1,20 @@
+(require 'savehist)
 (autoload 'auto-save-buffers "auto-save" "Save all buffers." t)
 
 
 (setq desktop-load-locked-desktop t
-      desktop-restore-frames t)
+      desktop-restore-frames t
+      enable-recursive-minibuffers t ; Allow commands in minibuffers
+      history-length 1000
+      savehist-additional-variables '(mark-ring
+                                      global-mark-ring
+                                      search-ring
+                                      regexp-search-ring
+                                      extended-command-history)
+      savehist-autosave-interval 300)
+
+(savehist-mode t)
+(save-place-mode t)
 
 (defun emacs-session-restore ()
   "Restore emacs session."

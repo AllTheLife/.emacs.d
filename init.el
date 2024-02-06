@@ -37,7 +37,7 @@
     (require 'init-sessions))
 
    (run-with-timer
-    3 nil
+    2 nil
     (lambda ()
       (load-configs
        (require 'init-icons)

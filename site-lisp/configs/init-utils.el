@@ -191,11 +191,22 @@ DOCSTRING and BODY are as in `defun'.
 
 (defcustom gc-cons-threshold-while-loading-configs 100000000
   "加载配置时的gc值，默认设为100M.")
+
 (defmacro load-configs (&rest body)
   "加快加载配置时的速度."
   `(let ((file-name-handler-alist nil)
          (gc-cons-threshold gc-cons-threshold-while-loading-configs))
      (progn ,@body)))
+
+(defmacro lazy-load-configs (arglist)
+  "分块加载语句."
+  (load-configs
+   `(let ((load-time 0.3))
+      (dolist (sentence ,arglist)
+	(run-with-idle-timer
+	 load-time nil
+	 `(lambda () (load-configs ,sentence)))
+	(setq load-time (+ load-time 0.3))))))
 
 
 (provide 'init-utils)

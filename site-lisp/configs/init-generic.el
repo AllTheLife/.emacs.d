@@ -46,8 +46,6 @@
 (global-hl-line-mode 1)                          ;; 高亮当前行
 (auto-compression-mode 1)                        ;; 打开压缩文件时自动解压缩
 (global-prettify-symbols-mode 1)                 ;; 将字符显示为奇特的符号
-(save-place-mode)                                ;; 保存光标在每个文件的位置
-(savehist-mode 1)                                ;; 保存命令历史
 (tool-bar-mode -1)                               ;; 关闭工具栏
 (menu-bar-mode -1)                               ;; 关闭菜单栏
 (scroll-bar-mode -1)                             ;; 关闭滚动条
