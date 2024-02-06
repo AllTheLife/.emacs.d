@@ -190,3 +190,6 @@
 [submodule "popper"]
 	path = site-lisp/extensions/popper
 	url = https://github.com/karthink/popper
+[submodule "insert-translated-name"]
+	path = site-lisp/extensions/insert-translated-name
+	url = https://github.com/manateelazycat/insert-translated-name

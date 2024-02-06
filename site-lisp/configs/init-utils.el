@@ -67,6 +67,16 @@
     (set-register 8 tmp))
   (message "Have back to remember position"))
 
+(defun copy-and-insert-newline ()
+  "复制当前行并在下方插入新的一行，再进行粘贴"
+  (interactive)
+  (copy-region-as-kill (line-beginning-position) (line-end-position))
+  (save-excursion
+    (move-end-of-line 1)
+    (newline)
+    (yank))
+  (next-line))
+
 (defun kill-unused-buffers ()
   (interactive)
   (ignore-errors

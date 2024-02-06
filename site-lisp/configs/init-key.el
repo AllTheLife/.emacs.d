@@ -17,7 +17,7 @@
  "consult")
 
 
-;;; 绑定快捷跳转
+;;; 绑定跳转快捷键
 (lazy-load-global-keys
  '(("C-." . remember-init)
    ("C-," .  remember-jump))
@@ -26,6 +26,12 @@
 
 ;;; 关闭当前 buffer
 (global-set-key (kbd "C-;") 'kill-this-buffer)
+
+
+;;; 复制当前行并插入到下方
+(lazy-load-global-keys
+ '(("C-<return>" . copy-and-insert-newline))
+ "init-utils")
 
 
 ;;; 管理 Tab-bar
@@ -37,7 +43,7 @@
    ("C-c t e" . tab-bar-switch-to-prev-tab)))
 
 
-;;; 结构化编辑
+;;; fingertip: 结构化编辑
 (defvar fingertip-key-alist nil)
 (setq fingertip-key-alist
       '(
@@ -254,6 +260,11 @@
  popper-mode-map
  "popper"
  "C-c C-p")
+
+;;; insert-translated-name: 自动为变量起英文名
+(lazy-load-global-keys
+ '(("C-t" . insert-translated-name-insert))
+ "insert-translated-name")
 
 
 (provide 'init-key)
