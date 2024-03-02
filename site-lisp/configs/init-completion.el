@@ -8,7 +8,7 @@
 (autoload 'consult-yank-pop "consult" "Load consult.el and call consult-yank-pop." t)
 
 
-(vertico-mode)				;; 开启vertico补全框架
+(vertico-mode)				;; 使用vertico做为minibuffer中的补全框架
 (marginalia-mode)			;; 使补全提示信息更详细
 (vertico-posframe-mode 1)               ;; 在posframe中进行补全
 
@@ -17,18 +17,8 @@
       vertico-posframe-parameters
       '((left-fringe . 8)
         (right-fringe . 8))
-      vertico-posframe-poshandler 'posframe-poshandler-point-window-center
+      vertico-posframe-poshandler 'posframe-poshandler-frame-bottom-center
       consult-preview-key 'any)
-
-(defun consult-find-file-with-preview (prompt &optional dir default mustmatch initial pred)
-  (interactive)
-  (let ((default-directory (or dir default-directory))
-        (minibuffer-completing-file-name t))
-    (consult--read #'read-file-name-internal :state (consult--file-preview)
-                   :prompt prompt
-                   :initial initial
-                   :require-match mustmatch
-                   :predicate pred)))
 
 
 (provide 'init-completion)

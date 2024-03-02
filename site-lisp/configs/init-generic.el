@@ -57,6 +57,8 @@
 (setq use-dialog-box nil)                        ;; 从不弹出对话框
 (setq history-delete-duplicates t)               ;; 删除 minibuffer 的重复历史
 (setq x-stretch-cursor t)                        ;; 光标在 TAB 字符上会显示为一个大方块
+(setq completion-cycle-threshold 3)              ;; 在候选项极少的情况下运行tab选择
+(setq tab-always-indent 'complete)               ;; 整合 indentation 与 completion
 (setq inhibit-startup-screen t)                  ;; 关闭开始界面
 (setq void-text-area-pointer nil)	         ;; 禁止显示鼠标指针
 (setq initial-scratch-message
