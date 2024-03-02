@@ -73,7 +73,6 @@
 
           bookmark-bmenu-mode
           comint-mode
-          compilation-mode
           help-mode helpful-mode
           tabulated-list-mode
           Buffer-menu-mode

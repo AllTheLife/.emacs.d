@@ -18,9 +18,7 @@
       '((left-fringe . 8)
         (right-fringe . 8))
       vertico-posframe-poshandler 'posframe-poshandler-point-window-center
-      consult-preview-key 'any
-      ;; read-file-name-function #'consult-find-file-with-preview
-      )
+      consult-preview-key 'any)
 
 (defun consult-find-file-with-preview (prompt &optional dir default mustmatch initial pred)
   (interactive)
@@ -33,4 +31,4 @@
                    :predicate pred)))
 
 
-(provide 'init-minibuffer)
+(provide 'init-completion)

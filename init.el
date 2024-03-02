@@ -27,7 +27,7 @@
     (require 'init-vc)
     (require 'init-meow)
     (require 'init-windows)
-    (require 'init-minibuffer)
+    (require 'init-completion)
     (require 'init-auto-save)
     (require 'init-treesit)
     ;; (require 'init-indent-bars)

@@ -36,7 +36,7 @@
                       (set-fontset-font t 'symbol (font-spec :family font) nil 'prepend)))
 
     ;; Specify font for Chinese characters
-    (cl-loop for font in '("LXGW WenKai Mono" "WenQuanYi Micro Hei Mono" "PingFang SC" "Microsoft Yahei" "STFangsong")
+    (cl-loop for font in '("SmileySans Oblique" "LXGW WenKai Mono" "WenQuanYi Micro Hei Mono" "PingFang SC" "Microsoft Yahei" "STFangsong")
              when (font-installed-p font)
              return (progn
                       (setq face-font-rescale-alist `((,font . 1)))

@@ -28,7 +28,8 @@
    (advice-add #'mouse-set-point :after #'holo-layer-monitor-frame-changed)
    (add-hook 'move-frame-functions #'holo-layer-monitor-frame-change)
    (add-hook 'delete-frame-functions #'holo-layer-monitor-frame-change)
-   (add-hook 'after-make-frame-functions #'holo-layer-monitor-make-frame)))
+   (add-hook 'after-make-frame-functions #'holo-layer-monitor-make-frame)
+   (holo-layer-start-process)))
 
 
 (provide 'init-holo-layer)

@@ -115,7 +115,8 @@
 
 (with-eval-after-load 'dirvish
   (lazy-load-local-keys
-   '(("h" . dired-up-directory))
+   '(("h" . dired-up-directory)
+     ("y" . dirvish-yank-menu))
    dirvish-mode-map
    "init-dired"))
 
@@ -240,8 +241,8 @@
    ("b" . balance-windows)
    ;; Split
    ("h" . split-window-right)
-   ("n" . split-window-below)
-   ("e" . my-split-window-below)
+   ("n" . my-split-window-below)
+   ("e" . split-window-below)
    ("i" . my-split-window-right)
    ("t" . my-split-window-horizontally)
    ("r" . my-split-window-vertically)

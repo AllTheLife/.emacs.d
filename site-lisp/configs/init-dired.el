@@ -1,4 +1,5 @@
 (require 'dirvish)
+(autoload 'dirvish-yank-menu "dirvish-yank" "Open dirvish yank menu." t)
 (autoload 'dirvish-side "dirvish-side" "Open dirvish on one side." t)
 (autoload 'holo-layer-kill-process "holo-layer")
 (autoload 'holo-layer-restart-process "holo-layer")
