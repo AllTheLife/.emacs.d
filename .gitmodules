@@ -202,3 +202,9 @@
 [submodule "cape"]
 	path = site-lisp/extensions/cape
 	url = https://github.com/minad/cape
+[submodule "eglot-booster"]
+	path = site-lisp/extensions/eglot-booster
+	url = https://github.com/jdtsmith/eglot-booster
+[submodule "emacs-lsp-booster"]
+	path = site-lisp/extensions/emacs-lsp-booster
+	url = https://github.com/blahgeek/emacs-lsp-booster

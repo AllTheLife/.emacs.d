@@ -78,7 +78,7 @@
 (setq make-backup-files nil)                     ;; 不生成备份文件
 (setq scroll-margin 5)                           ;; 始终在屏幕上方和下方保留 5 行
 (setq gdb-many-windows t)                        ;; 启用多窗口调试
-(setq gc-cons-threshold 10000000)                ;; 将垃圾回收设置为10M
+(setq gc-cons-threshold 30000000)                ;; 将垃圾回收设置为30M
 (setq package-install-upgrade-built-in t)        ;; 允许更新内置包
 (setq-default comment-style 'indent)             ;; 设定自动缩进的注释风格
 (setq byte-compile-warnings

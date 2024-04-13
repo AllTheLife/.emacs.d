@@ -15,6 +15,7 @@
 
 (savehist-mode t)
 (save-place-mode t)
+(add-to-list 'savehist-additional-variables 'corfu-history)
 
 (defun emacs-session-restore ()
   "Restore emacs session."

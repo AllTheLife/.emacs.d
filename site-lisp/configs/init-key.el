@@ -87,23 +87,30 @@
 
 
 ;;; lsp-bridge: 自动补全
-(lazy-load-global-keys
- '(("e" . lsp-bridge-popup-documentation)
-   ("d" . lsp-bridge-find-def)
-   ("D" . lsp-bridge-find-def-return)
-   ("n" . lsp-bridge-find-references)
-   ("r" . lsp-bridge-rename)
-   ("a" . lsp-bridge-code-action)
-   ("s" . lsp-bridge-toggle-sdcv-helper)
-   ("p" . lsp-bridge-peek)
-   ("v" . lsp-bridge-avy-peek)
-   ("t" . lsp-bridge-peek-through)
-   ("i n" . lsp-bridge-diagnostic-jump-next)
-   ("i p" . lsp-bridge-diagnostic-jump-prev)
-   ("i l" . lsp-bridge-diagnostic-list)
-   ("i i" . lsp-bridge-diagnostic-ignore))
- "init-lsp-bridge"
- "C-c d")
+;; (lazy-load-global-keys
+;;  '(("e" . lsp-bridge-popup-documentation)
+;;    ("d" . lsp-bridge-find-def)
+;;    ("D" . lsp-bridge-find-def-return)
+;;    ("n" . lsp-bridge-find-references)
+;;    ("r" . lsp-bridge-rename)
+;;    ("a" . lsp-bridge-code-action)
+;;    ("s" . lsp-bridge-toggle-sdcv-helper)
+;;    ("p" . lsp-bridge-peek)
+;;    ("v" . lsp-bridge-avy-peek)
+;;    ("t" . lsp-bridge-peek-through)
+;;    ("i n" . lsp-bridge-diagnostic-jump-next)
+;;    ("i p" . lsp-bridge-diagnostic-jump-prev)
+;;    ("i l" . lsp-bridge-diagnostic-list)
+;;    ("i i" . lsp-bridge-diagnostic-ignore))
+;;  "init-lsp-bridge"
+;;  "C-c d")
+
+
+;;; corfu: 自动补全框架
+(lazy-load-local-keys
+ '(([tab] . yas-expand))
+ corfu-map
+ "init-completion")
 
 
 ;;; dirvish: 文件浏览器

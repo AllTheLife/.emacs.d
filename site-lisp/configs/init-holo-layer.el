@@ -12,24 +12,24 @@
 (setq holo-layer-inactive-window-color "#224254")
 (setq holo-layer-window-number-color "#b262de")
 
-;; (holo-layer-enable)  ;; 会造成性能问题
-(lazy-load-configs
- '((when holo-layer-enable-cursor-animation
-     (add-hook 'post-command-hook #'holo-layer-monitor-cursor-change))
+;; (lazy-load-configs
+;;  '((when holo-layer-enable-cursor-animation
+;;      (add-hook 'post-command-hook #'holo-layer-monitor-cursor-change))
 
-   (add-hook 'post-command-hook #'holo-layer-show-place-info)
+;;    (add-hook 'post-command-hook #'holo-layer-show-place-info)
 
-   (add-hook 'window-size-change-functions #'holo-layer-monitor-configuration-change)
-   (add-hook 'window-configuration-change-hook #'holo-layer-monitor-configuration-change)
-   (add-hook 'buffer-list-update-hook #'holo-layer-monitor-configuration-change)
+;;    (add-hook 'window-size-change-functions #'holo-layer-monitor-configuration-change)
+;;    (add-hook 'window-configuration-change-hook #'holo-layer-monitor-configuration-change)
+;;    (add-hook 'buffer-list-update-hook #'holo-layer-monitor-configuration-change)
 
-   (advice-add #'other-frame :after #'holo-layer-monitor-frame-changed)
-   (advice-add #'maximize-frame :after #'holo-layer-monitor-frame-changed)
-   (advice-add #'mouse-set-point :after #'holo-layer-monitor-frame-changed)
-   (add-hook 'move-frame-functions #'holo-layer-monitor-frame-change)
-   (add-hook 'delete-frame-functions #'holo-layer-monitor-frame-change)
-   (add-hook 'after-make-frame-functions #'holo-layer-monitor-make-frame)
-   (holo-layer-start-process)))
+;;    (advice-add #'other-frame :after #'holo-layer-monitor-frame-changed)
+;;    (advice-add #'maximize-frame :after #'holo-layer-monitor-frame-changed)
+;;    (advice-add #'mouse-set-point :after #'holo-layer-monitor-frame-changed)
+;;    (add-hook 'move-frame-functions #'holo-layer-monitor-frame-change)
+;;    (add-hook 'delete-frame-functions #'holo-layer-monitor-frame-change)
+;;    (add-hook 'after-make-frame-functions #'holo-layer-monitor-make-frame)
+;;    (holo-layer-start-process)))
+(load-configs (holo-layer-enable))
 
 
 (provide 'init-holo-layer)
