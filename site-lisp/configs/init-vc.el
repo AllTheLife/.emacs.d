@@ -4,17 +4,23 @@
 
 
 (setq diff-hl-draw-borders nil)
-;; (custom-set-faces
-;;  '(diff-hl-change ((t (:inherit custom-changed :foreground unspecified :background unspecified))))
-;;  '(diff-hl-insert ((t (:inherit diff-added :background unspecified))))
-;;  '(diff-hl-delete ((t (:inherit diff-removed :background unspecified)))))
 
 (global-diff-hl-mode t)
 
-;; Integration with magit
 (with-eval-after-load 'magit
   (add-hook 'magit-pre-refresh-hook #'diff-hl-magit-pre-refresh)
-  (add-hook 'magit-post-refresh-hook #'diff-hl-magit-post-refresh))
+  (add-hook 'magit-post-refresh-hook #'diff-hl-magit-post-refresh)
+
+  (defun magit-fullscreen (orig-fun &rest args)
+    (window-configuration-to-register :magit-fullscreen)
+    (apply orig-fun args)
+    (delete-other-windows))
+
+  (defun magit-restore-screen (&rest args)
+    (jump-to-register :magit-fullscreen))
+
+  (advice-add 'magit-status :around #'magit-fullscreen)
+  (advice-add 'magit-mode-quit-window :after #'magit-restore-screen))
 
 
 (provide 'init-vc)
