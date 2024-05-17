@@ -12,7 +12,7 @@
 (setq acm-backend-yas-candidate-min-length 2)
 (setq acm-backend-lsp-candidate-min-length 2)
 (setq acm-backend-lsp-enable-auto-import nil)
-(setq acm-backend-lsp-match-mode 'regexp-quote)
+(setq acm-candidate-match-function 'regexp-quote)
 (setq lsp-bridge-enable-org-babel nil)
 (setq lsp-bridge-c-lsp-server "ccls")
 (setq lsp-bridge-enable-hover-diagnostic t)
