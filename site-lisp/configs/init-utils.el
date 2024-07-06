@@ -98,7 +98,7 @@
 
 (defun rename-this-file-and-buffer (new-name)
   "重命名当前文件和缓冲区，并访问新名称"
-  (interactive "sNew name: ")
+  (interactive "fNew name: ")
   (let ((name (buffer-name))
         (filename (buffer-file-name)))
     (unless filename

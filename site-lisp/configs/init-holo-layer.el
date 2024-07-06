@@ -4,6 +4,7 @@
 (setq holo-layer-enable-cursor-animation t)
 (setq holo-layer-cursor-alpha 255)
 (setq holo-layer-cursor-animation-interval 10)
+(setq holo-layer-cursor-animation-color-gradient-start-value "white")
 (setq holo-layer-cursor-animation-type "jelly easing")
 (setq holo-layer-enable-place-info t)
 (setq holo-layer-place-info-font-size 13)

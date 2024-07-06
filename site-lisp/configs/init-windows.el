@@ -132,7 +132,6 @@
     (advice-add #'keyboard-quit :before #'popper-close-window-hack))
 
 (popper-mode t)
-(popper-echo-mode t)
 
 
 (provide 'init-windows)
