@@ -49,9 +49,6 @@
 [submodule "yasnippet"]
 	path = site-lisp/extensions/yasnippet
 	url = https://github.com/joaotavora/yasnippet
-[submodule "lsp-bridge"]
-	path = site-lisp/extensions/lsp-bridge
-	url = https://github.com/manateelazycat/lsp-bridge
 [submodule "vertico"]
 	path = site-lisp/extensions/vertico
 	url = https://github.com/minad/vertico
@@ -208,3 +205,6 @@
 [submodule "emacs-lsp-booster"]
 	path = site-lisp/extensions/emacs-lsp-booster
 	url = https://github.com/blahgeek/emacs-lsp-booster
+[submodule "lsp-bridge"]
+	path = site-lisp/extensions/lsp-bridge
+	url = https://github.com/manateelazycat/lsp-bridge/
