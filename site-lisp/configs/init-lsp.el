@@ -6,6 +6,7 @@
 (setq acm-enable-tabnine nil)
 (setq acm-enable-yas t)
 (setq acm-enable-citre nil)
+(setq acm-enable-capf t)
 (setq acm-enable-quick-access nil)
 (setq acm-enable-telega nil)
 (setq acm-backend-search-file-words-candidate-min-length 2)

@@ -3,7 +3,9 @@
 
 (setq maple-run:timeout 180
       maple-run:auto-clear t)
+
 (add-to-list 'maple-run:alist '((c++-ts-mode c++-mode) :command "./main"))
+(add-to-list 'maple-run:alist '((python-ts-mode python-mode) :command "python %F"))
 
 (defun compile-and-run-cpp ()
   (interactive)
