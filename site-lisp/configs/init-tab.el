@@ -150,7 +150,7 @@
     items))
 
 (setq tab-bar-border nil
-      tab-bar-close-button nil
+      tab-bar-close-button-show nil
       tab-bar-back-button nil
       tab-bar-new-button nil
       tab-bar-format '(+tab-bar-left tab-bar-format-tabs +tab-bar-right)

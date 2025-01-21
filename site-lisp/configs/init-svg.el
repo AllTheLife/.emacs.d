@@ -100,6 +100,14 @@ and style elements ARGS."
                              :ascent 12))
                :ascent 70 :scale 0.7)))
 
+(defvar svg-tag-cache nil)
+
+(defun svg-tag-with-cache (orig &rest args)
+  (unless svg-tag-cache
+    (setq svg-tag-cache (make-hash-table :test 'equal)))
+  (with-memoization (gethash args svg-tag-cache)
+    (apply orig args)))
+
 (global-svg-tag-mode t)
 
 

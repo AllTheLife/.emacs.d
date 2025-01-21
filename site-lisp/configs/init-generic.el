@@ -82,6 +82,7 @@
 (setq package-install-upgrade-built-in t)        ;; 允许更新内置包
 (setq-default comment-style 'indent)             ;; 设定自动缩进的注释风格
 (setq enable-recursive-minibuffers t)            ;; 开启 minibuffer 嵌套调用
+(setq default-max-load-depth 4)                  ;; 设置最大加载深度
 (setq byte-compile-warnings
       (quote (
               ;; 显示的警告

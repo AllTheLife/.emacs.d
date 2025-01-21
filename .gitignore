@@ -16,3 +16,5 @@ places
 /blink-search.db
 /games/
 /blink-search/
+/.ccls-cache/
+/site-lisp/configs/init-svg.el.bak

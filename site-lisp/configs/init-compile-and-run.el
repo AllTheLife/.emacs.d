@@ -10,7 +10,7 @@
 (defun compile-and-run-cpp ()
   (interactive)
   (let* ((file (buffer-file-name))
-	 (command (concat "g++ -o main -Wall -g " file)))
+	 (command (concat "g++ -o main -Wall -O2 -g " file)))
     (compile command)
     (unless compilation-finish-functions
       (add-hook 'compilation-finish-functions
