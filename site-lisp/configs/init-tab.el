@@ -107,13 +107,13 @@
       (setq width (/ (* (/ (frame-inner-width) 3) 2)  ;; fix tab width
                      (length tabs)))
       (when tab-bar-auto-width-min
-        (setq width (max width (if (window-system)
-                                   (nth 0 tab-bar-auto-width-min)
-                                 (nth 1 tab-bar-auto-width-min)))))
+        (setq width (max width (nth 0 (if (window-system)
+					  (nth 0 tab-bar-auto-width-min)
+					(nth 1 tab-bar-auto-width-min))))))
       (when tab-bar-auto-width-max
-        (setq width (min width (if (window-system)
-                                   (nth 0 tab-bar-auto-width-max)
-                                 (nth 1 tab-bar-auto-width-max)))))
+        (setq width (min width (nth 0 (if (window-system)
+					  (nth 0 tab-bar-auto-width-max)
+					(nth 1 tab-bar-auto-width-max))))))
       (dolist (item tabs)
         (setf (nth 2 item)
               (with-memoization (gethash (list (selected-frame)

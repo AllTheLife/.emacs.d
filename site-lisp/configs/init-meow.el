@@ -4,6 +4,7 @@
 (autoload 'undo-fu-only-undo "undo-fu")
 (autoload 'undo-fu-only-redo "undo-fu")
 (autoload 'vundo "vundo")
+(autoload 'compile-and-run "init-compile-and-run")
 
 (defun meow-next-quickly ()
   (interactive)
@@ -23,7 +24,6 @@
   (meow-leader-define-key
    '("?" . meow-cheatsheet)
    ;; To execute the originally e in MOTION state, use SPC e.
-   '("e" . "H-e")
    '("1" . meow-digit-argument)
    '("2" . meow-digit-argument)
    '("3" . meow-digit-argument)
@@ -33,7 +33,8 @@
    '("7" . meow-digit-argument)
    '("8" . meow-digit-argument)
    '("9" . meow-digit-argument)
-   '("0" . meow-digit-argument))
+   '("0" . meow-digit-argument)
+   '("e" . compile-and-run))
   (meow-normal-define-key
    '("0" . meow-digit-argument)
    '("1" . meow-digit-argument)

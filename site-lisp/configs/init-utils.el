@@ -219,5 +219,11 @@ DOCSTRING and BODY are as in `defun'.
 	 `(lambda () (load-configs ,sentence)))
 	(setq load-time (+ load-time 0.3))))))
 
+(defun jump-last-buffer ()
+  "关闭当前buffer."
+  (interactive)
+  (let ((buffer (buffer-name)))
+    (kill-buffer buffer)))
+
 
 (provide 'init-utils)

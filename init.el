@@ -15,7 +15,7 @@
 (require 'init-generic)
 
 (run-with-timer
- 0.0005 nil
+ 0.02 nil
  (lambda ()
 
    (load-configs
@@ -49,4 +49,5 @@
        ;; (require 'init-telega)
        ;; (require 'init-holo-layer)
        (require 'init-lsp)
-       (require 'init-dape))))))
+       ;; (require 'init-dape)
+       )))))

@@ -97,9 +97,6 @@
 [submodule "dirvish"]
 	path = site-lisp/extensions/dirvish
 	url = https://github.com/alexluigit/dirvish
-[submodule "combobulate"]
-	path = site-lisp/extensions/combobulate
-	url = https://github.com/mickeynp/combobulate
 [submodule "fingertip"]
 	path = site-lisp/extensions/fingertip
 	url = https://github.com/manateelazycat/fingertip
@@ -208,3 +205,6 @@
 [submodule "lsp-bridge"]
 	path = site-lisp/extensions/lsp-bridge
 	url = https://github.com/manateelazycat/lsp-bridge/
+[submodule "llama"]
+	path = site-lisp/extensions/llama
+	url = https://github.com/tarsius/llama

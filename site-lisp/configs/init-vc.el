@@ -1,5 +1,6 @@
 (require 'transient)
 (require 'diff-hl)
+(require 'llama)
 (autoload 'magit "magit" "Load magit." t)
 
 

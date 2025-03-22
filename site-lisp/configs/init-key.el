@@ -25,8 +25,9 @@
 
 
 ;;; 关闭当前 buffer
-(global-set-key (kbd "C-;") 'kill-this-buffer)
-
+(lazy-load-global-keys
+ '(("C-;" . jump-last-buffer))
+ "init-utils")
 
 ;;; 复制当前行并插入到下方
 (lazy-load-global-keys
@@ -122,10 +123,17 @@
 
 (with-eval-after-load 'dirvish
   (lazy-load-local-keys
-   '(("h" . dired-up-directory)
-     ("y" . dirvish-yank-menu))
+   '(;; (";" . dired-up-directory)  ; So you can adjust dired bindings here
+     ("?"   . dirvish-dispatch)     ; contains most of sub-menus in dirvish extensions
+     ("y"   . dirvish-yank-menu)
+     ("s"   . dirvish-setup-menu)   ; `st' toggles mtime, `ss' toggles file size, etc.
+     ("M-f" . dirvish-file-info-menu)
+     ("M-l" . dirvish-ls-switches-menu)
+     ("M-m" . dirvish-mark-menu)
+     ("M-t" . dirvish-layout-toggle)
+     ("M-e" . dirvish-emerge-menu))
    dirvish-mode-map
-   "init-dired"))
+   "dirvish"))
 
 
 ;;; 保存恢复工作布局
